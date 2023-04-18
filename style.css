@@ -443,14 +443,13 @@
   font-family: "Raleway", sans-serif;
   overflow: hidden;
 }
-.left_resume_content{
+.left_resume_content {
   width: 50%;
   padding-right: 15px;
 }
-.right_resume_content{
+.right_resume_content {
   width: 50%;
   padding-left: 12px;
-
 }
 .resume_title {
   padding-bottom: 30px;
@@ -506,51 +505,51 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.resume_item h5{
-    font-size: 16px;
-    background: #e4edf9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
+.resume_item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 800px) {
-  .resume_content{
-   flex-direction: column;
+  .resume_content {
+    flex-direction: column;
   }
-  .left_resume_content{
+  .left_resume_content {
     width: 80%;
   }
-  .right_resume_content{
+  .right_resume_content {
     width: 80%;
   }
 }
 /* ============= Main content resume section end here ============= */
 /* ============= Main content services section start here ============= */
-#servises{
+#service {
   padding: 20px;
   margin-top: 4%;
   margin-bottom: 5%;
   font-family: "Raleway", sans-serif;
   overflow: hidden;
 }
-.services_title{
-      padding-bottom: 30px;
+.services_title {
+  padding-bottom: 30px;
 }
 .services_title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: #173b6c;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #173b6c;
 }
-.services_item{
+.services_item {
   display: flex;
-margin-top: 0;
-margin-right: -0.75rem;
-margin-left: -0.75rem;
+  margin-top: 0;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
 }
-.icon{
+.icon {
   float: left;
   display: flex;
   align-items: center;
@@ -567,7 +566,7 @@ margin-left: -0.75rem;
   font-size: 35px;
   line-height: 0;
 }
-.icon_title{
+.icon_title {
   margin-top: 15px;
   margin-left: 80px;
   font-weight: 700;
@@ -575,22 +574,125 @@ margin-left: -0.75rem;
   font-size: 18px;
 }
 .icon_title a {
-  color: #343a40;;
+  color: #343a40;
 }
 .description {
-    margin-left: 80px;
-    line-height: 24px;
-    font-size: 14px;
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
 }
-@media only screen and (max-width: 800px){
- .services_item{
-  flex-direction: column;
-  width: 70%;
-      box-sizing: border-box;
-  
-  margin: 0% auto;
- }
-
+@media only screen and (max-width: 800px) {
+  .services_item {
+    flex-direction: column;
+    width: 70%;
+    box-sizing: border-box;
+    margin: 0% auto;
+  }
 }
 /* ============= Main content services section end here ============= */
+/* ============= Main contact services section start here ============= */
+#contact {
+  padding: 20px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+.contact_title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #173b6c;
+}
+.form_backgrount {
+  opacity: 1;
+  transform: translateZ(0);
+}
+.contact_content {
+  margin-top: 5%;
+  display: flex;
+}
+.contact1 {
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.right_contact {
+  width: 50%;
+  margin-left: 12px;
+}
+.left_contact {
+  width: 50%;
+  margin-right: 20px;
+}
+.contact_info svg {
+  font-size: 12px;
+  color: #149ddd;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.contact_info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+.contact_info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+.from_last {
+  padding: 120px;
+}
+.form_last input {
+  height: 44px;
+  padding-left: 4px;
+  border-radius: 0;
+  border-radius: 9px;
+  box-shadow: none;
+  font-size: 17px;
+}
+.form_last label {
+  margin-top: 15px;
+  padding-bottom: 12px;
+  display: block;
+}
+.form_name {
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+}
+.form {
+  padding-bottom: 8px;
+}
+.form_btn{
+  text-align: center;
+  margin-top: 15px;
+}
+.submit_btn {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form_message textarea{
+  padding: 5px;
+  font-size: 16px;
+
+}
+/* ============= Main contact services section end here ============= */
 /* ============= Main content end here ============= */
