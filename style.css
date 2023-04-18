@@ -202,7 +202,7 @@
 /* ============= Main content responsive end here ============= */
 /* ============= Main content About section start here ============= */
 #about {
-  height:auto;
+  height: auto;
   font-size: 18px;
   font-weight: bold;
   padding: 20px;
@@ -259,14 +259,18 @@
   justify-content: space-between;
   color: rgb(42, 32, 32);
   font-family: "Raleway", sans-serif;
-  
+  font-size: 16px;
 }
 @media only screen and (max-width: 800px) {
   .Info_flex {
     flex-direction: column;
+    font-size: 18px;
   }
   .about_content_1 img {
     width: 100%;
+  }
+  .about_content_2 h1 {
+    width: 90%;
   }
 }
 .info_div1 ul {
@@ -292,7 +296,7 @@
 #facts {
   padding: 20px;
   height: auto;
-  /* margin-top: 24%; */
+  margin-bottom: 5%;
 }
 .section_title {
   padding-bottom: 30px;
@@ -323,12 +327,13 @@
 }
 .client_reaction {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .reaction {
-  width: 22%;
+  width: 20%;
   margin-right: 20px;
 }
 .counter_box svg {
@@ -340,31 +345,40 @@
 .count_reaction {
   font-size: 48px;
   line-height: 40px;
-  display: block;
+  display: inline-block;
   font-weight: 700;
   color: #050d18;
-  margin-left: 60px;
+  margin-left: 7px;
 }
 .count_reaction_para {
-  padding: 15px 0 0 0;
+  padding: 14px 0 0 0;
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #122f57;
 }
+@media only screen and (max-width: 800px) {
+  .client_reaction {
+    flex-direction: column;
+  }
+  .reaction {
+    width: 40%;
+    margin-top: 12px;
+  }
+}
 /* ============= Main content facts section end here ============= */
 /* ============= Main content skill section start here ============= */
-.skill {
+.skill_section {
   background: #f5f8fd;
   padding: 20px;
-  /* margin-top: 4%; */
+  margin-top: 4%;
+  margin-bottom: 5%;
   font-family: "Raleway", sans-serif;
-
 }
 .skill_title {
   padding-bottom: 30px;
 }
-.skill_title h2{
+.skill_title h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -375,9 +389,208 @@
 .skill_title p {
   margin-bottom: 0%;
 }
-.progress_bars{
+.progress_bars {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-  /* ============= Main content skill section end here ============= */
+.left__progress {
+  width: 50%;
+  margin-right: 1%;
+}
+.right_progress {
+  width: 50%;
+  margin-left: 1%;
+}
+.container {
+  background: #dce8f8;
+}
+.skill {
+  background-color: #173b6c;
+  color: white;
+  padding: 1.2%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.left__progress i {
+  float: right;
+}
+.right_progress i {
+  float: right;
+}
+@media only screen and (max-width: 800px) {
+  .progress_bars {
+    flex-direction: column;
+  }
+  .skill {
+    margin-top: 20px;
+  }
+  .left__progress {
+    width: 70%;
+  }
+  .right_progress {
+    width: 70%;
+  }
+}
+/* ============= Main content skill section end here ============= */
+/* ============= Main content resume section start here ============= */
+#resume {
+  padding: 20px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+.left_resume_content{
+  width: 50%;
+  padding-right: 15px;
+}
+.right_resume_content{
+  width: 50%;
+  padding-left: 12px;
+
+}
+.resume_title {
+  padding-bottom: 30px;
+}
+.resume_title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #173b6c;
+}
+.resume_title p {
+  margin-bottom: 0;
+}
+.resume_content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.left_resume_content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+.right_resume_content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+.resume_item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.resume_item p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.resume_item h5{
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .resume_content{
+   flex-direction: column;
+  }
+  .left_resume_content{
+    width: 80%;
+  }
+  .right_resume_content{
+    width: 80%;
+  }
+}
+/* ============= Main content resume section end here ============= */
+/* ============= Main content services section start here ============= */
+#servises{
+  padding: 20px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+.services_title{
+      padding-bottom: 30px;
+}
+.services_title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #173b6c;
+}
+.services_item{
+  display: flex;
+margin-top: 0;
+margin-right: -0.75rem;
+margin-left: -0.75rem;
+}
+.icon{
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.8s;
+  border: 1px solid #149ddd;
+}
+.icon svg {
+  color: #fff;
+  font-size: 35px;
+  line-height: 0;
+}
+.icon_title{
+  margin-top: 15px;
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.icon_title a {
+  color: #343a40;;
+}
+.description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+@media only screen and (max-width: 800px){
+ .services_item{
+  flex-direction: column;
+  width: 70%;
+      box-sizing: border-box;
+  
+  margin: 0% auto;
+ }
+
+}
+/* ============= Main content services section end here ============= */
 /* ============= Main content end here ============= */
