@@ -9,10 +9,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 320px;
-  z-index: 9997;
+  width: 300px;
   transition: all ease-in-out 0.5s;
-  transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
@@ -20,7 +18,7 @@
 .image {
   margin: 15px auto;
   display: block;
-  width: 170px;
+  width: 120px;
   border: 8px solid #2c2f3f;
   border-radius: 90px;
 }
@@ -34,29 +32,39 @@
   text-decoration: none;
 }
 .social_link {
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
 }
 .social_link a {
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
   background: #212431;
   color: #fff;
-  line-height: 1.5;
-  padding: 11px 6px;
-  margin-right: 6px;
+  line-height: 1.6;
+  padding: 8px 4px;
+  margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 35px;
-  height: 25px;
+  width: 36px;
+  height: 28px;
   transition: 0.3s;
 }
 .social_link a:hover {
-  color: blue;
+  color: white;
+  background-color: #149ddd;
 }
 .nav_leftside {
-  margin: 12px 0px 0px 20px;
-  font-size: 22px;
+  margin: 8px 0px 0px 8px;
+  font-size: 18px;
   font-family: "Raleway", sans-serif;
+}
+
+.nav_leftside a {
+  padding: 5px 0px;
+}
+
+.nav_leftside a:hover {
+  color: #149ddd;
 }
 .nav_leftside ul li {
   color: white;
@@ -73,15 +81,20 @@
 }
 /* =================== header styling end here ================== */
 
+/* =================== main  styling start here ================== */
+.main {
+}
 /* =================== hero  styling start here ================== */
+
 #hero {
   width: 100%;
   height: 100vh;
   background-image: url("./imges/saqi202.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-.display {
+/* .display {
   position: fixed;
   right: 12px;
   top: 12px;
@@ -95,7 +108,7 @@
 }
 .display:hover {
   color: red;
-}
+} */
 #hero h2 {
   min-width: 300px;
   padding: 30% 0px 0px 30%;
@@ -104,11 +117,11 @@
   font-weight: 700;
   line-height: 60px;
   color: #fff;
-  opacity: 1;
+  /* opacity: 1; */
 }
 #hero p {
   color: #fff;
-  min-width: 300px;
+  /* min-width: 300px; */
   padding-left: 30%;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -116,7 +129,7 @@
 /* =================== Hero section styling end here ================== */
 
 /* =================== Hero section responsive start here ================== */
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   #hero {
     background-attachment: fixed;
   }
@@ -147,6 +160,7 @@
   #hero {
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
   }
   #hero h2 {
     font-size: 30px;
@@ -163,6 +177,7 @@
   #hero {
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
   }
   #hero h2 {
     font-size: 25px;
@@ -173,38 +188,18 @@
   #hero p {
     padding: 0% 0px 0px 8%;
   }
-}
+} */
 /* =================== Hero section responsive end here ================== */
-.footer {
-  padding: 10px;
-  padding-left: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 12px;
-  bottom: 12px;
-  width: 300px;
-}
 
-/* ============= Main content  start here ============= */
+/* ============= Main   start here ============= */
 #main {
   margin-left: 350px;
 }
-/* ============= Main content responsive start here ============= */
-@media only screen and (max-width: 1000px) {
-  #main {
-    margin-left: 0px;
-  }
-  #header {
-    display: none;
-  }
-}
-/* ============= Main content responsive end here ============= */
+
 /* ============= Main content About section start here ============= */
 #about {
   height: auto;
   font-size: 18px;
-  font-weight: bold;
   padding: 20px;
   margin-bottom: 5%;
 }
@@ -230,7 +225,6 @@
 }
 .about_content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
 }
@@ -252,7 +246,7 @@
 }
 .about_content_2 h1 {
   color: #173b6c;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .Info_flex {
   display: flex;
@@ -405,12 +399,13 @@
   background: #dce8f8;
 }
 .skill {
-  background-color: #173b6c;
+  background-color: #149ddd;
   color: white;
   padding: 1.2%;
   text-align: right;
   font-size: 20px;
-  border-radius: 15px;
+  transition: 0.9s;
+  /* border-radius: 15px; */
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -447,27 +442,31 @@
   width: 50%;
   padding-right: 15px;
 }
-.right_resume_content {
-  width: 50%;
-  padding-left: 12px;
-}
 .resume_title {
   padding-bottom: 30px;
 }
 .resume_title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
   color: #173b6c;
+}
+.liner_resume {
+  width: 50px;
+  display: block;
+  height: 3px;
+  background: #149ddd;
+  top: 0px;
+  left: 0%;
+  margin-bottom: 30px;
 }
 .resume_title p {
   margin-bottom: 0;
 }
 .resume_content {
   display: flex;
-  /* flex-wrap: wrap; */
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 5%;
 }
 
@@ -485,11 +484,20 @@
   margin-bottom: 20px;
   color: #050d18;
 }
-.resume-item {
+.resume_item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
+}
+
+.resume_item h4::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: 10px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
 }
 .resume_item h4 {
   line-height: 18px;
@@ -525,6 +533,74 @@
   }
 }
 /* ============= Main content resume section end here ============= */
+/* ============= Main content portfolio section end here ============= */
+#portfolio {
+  padding: 20px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  background: #f5f8fd;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+.portfolio_title {
+  padding-bottom: 30px;
+}
+
+.portfolio_title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  color: #173b6c;
+  width: 900px;
+}
+.portfolio_apps {
+  background-color: white;
+  width: 30%;
+  margin: 0px auto;
+  border-radius: 33px;
+  cursor: pointer;
+  padding: 10px 15px 8px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: #272829;
+  margin-bottom: 5px;
+}
+.portfolio_apps_nav {
+  display: flex;
+  justify-content: center;
+}
+.portfolio_apps_nav li {
+  margin-left: 30px;
+  list-style-type: none;
+}
+.Portfolio_app_img{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: red; */
+}
+.app_images img{
+  height: 200px;
+  width: 40%;
+}
+.app_images{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+
+}
+@media only screen and (max-width: 800px){
+  .app_images{
+    flex-direction: column;
+  }
+  .app_images img{
+    width: 300px;
+    margin-top: 12px;
+  }
+}
+/* ============= Main content portfolio section end here ============= */
+
 /* ============= Main content services section start here ============= */
 #service {
   padding: 20px;
@@ -539,9 +615,18 @@
 .services_title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
   color: #173b6c;
+}
+.liner_services {
+  width: 50px;
+  display: block;
+  height: 3px;
+  background: #149ddd;
+  top: 0px;
+  left: 0%;
+  margin-bottom: 30px;
 }
 .services_item {
   display: flex;
@@ -601,13 +686,18 @@
 .contact_title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
   color: #173b6c;
 }
-.form_backgrount {
-  opacity: 1;
-  transform: translateZ(0);
+.liner_contact {
+  width: 50px;
+  display: block;
+  height: 3px;
+  background: #149ddd;
+  top: 0px;
+  left: 0%;
+  margin-bottom: 30px;
 }
 .contact_content {
   margin-top: 5%;
@@ -659,8 +749,7 @@
 .form_last input {
   height: 44px;
   padding-left: 4px;
-  border-radius: 0;
-  border-radius: 9px;
+  border-radius: 0px;
   box-shadow: none;
   font-size: 17px;
 }
@@ -677,7 +766,7 @@
 .form {
   padding-bottom: 8px;
 }
-.form_btn{
+.form_btn {
   text-align: center;
   margin-top: 15px;
 }
@@ -689,10 +778,53 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.form_message textarea{
+.form_message textarea {
   padding: 5px;
   font-size: 16px;
-
+}
+@media only screen and (max-width: 800px) {
+  .form_name {
+    flex-direction: column;
+  }
+  .contact_content {
+    flex-direction: column;
+  }
+  .form_message textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .conatainer_body {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0% auto;
+  }
 }
 /* ============= Main contact services section end here ============= */
+/* ============= Main contact footer start here ============= */
+
+.footer {
+  padding: 15px;
+  /* color: #f4f6fd; */
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #040b14;
+}
+
+/* ============= Main contact footer end here ============= */
+/* ============= Main content responsive start here ============= */
+@media only screen and (max-width: 1000px) {
+  #main {
+    margin-left: 0px;
+  }
+  #header {
+    display: none;
+  }
+}
+/* ============= Main content responsive end here ============= */
 /* ============= Main content end here ============= */
